@@ -1,0 +1,6 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #FF00C7, 80%, #5A00B5);
+  filter:opacity(0.7);
+}
