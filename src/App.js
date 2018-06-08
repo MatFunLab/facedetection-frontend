@@ -14,7 +14,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 const particlesOptions = {
   particles: {
           number: {
-            value: 50,
+            value: 40,
             density: {
               enable: true,
               value_area: 500
@@ -50,6 +50,7 @@ class App extends Component {
   }
 
   deleteUser = () => {
+
     let email = this.state.user.email;
 
     fetch(`https://fathomless-sierra-77807.herokuapp.com/profile/${email}`, { // http://localhost:3000
@@ -61,7 +62,7 @@ class App extends Component {
   })
   .then(res => res.json()).then((userName) => {
         if(userName) {
-            alert(`${userName} you succesfully deleted your account`);
+            alert(`${userName} you succesfully deleted your account`); //don`t forget to make it nice
             this.onRouteChange("signin");
             }
         }).catch((err) => {
@@ -114,7 +115,7 @@ onGoToDashboard = ()=> {
     .then(response => response.json())
     .then(response => {
       if(response) {
-        fetch("https://fathomless-sierra-77807.herokuapp.com/image", { // http://localhost:3000 
+        fetch("https://fathomless-sierra-77807.herokuapp.com/image", { // http://localhost:3000
             method: "put",
             headers: {"Content-type": "application/json"},
             body: JSON.stringify({

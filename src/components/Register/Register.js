@@ -25,7 +25,7 @@ class Register extends React.Component {
     if(this.state.email === "" || this.state.password === "" || this.state.name === "") {
       return console.log("fields NAME, PASSWORD and EMAIL are mandatory");
     }
-    fetch("https://fathomless-sierra-77807.herokuapp.com/register", {  // http://localhost:3000 
+    fetch("https://fathomless-sierra-77807.herokuapp.com/register", {  // http://localhost:3000
       method: "post",
       headers: {"Content-type": "application/json"},
       body: JSON.stringify({

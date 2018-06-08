@@ -4,3 +4,39 @@
   flex-direction:column;
   filter: opacity(0.7);
 }
+
+.alert-container {
+  margin-top: 20%;
+  margin-left: 5%;
+  z-index: 1;
+  height: 30%;
+  width: 95%;
+  border: 1px solid black;
+  box-shadow: 10px 10px 15px #1A0210;
+  border-radius: 8px;
+  filter: opacity(0.7);
+}
+
+ h2 {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+.buttons {
+  margin-top: 2%;
+  overflow:auto;
+  display: flex;
+  justify-content: center;
+
+}
+button {
+  background-color: black;
+  border-radius: 8px;
+  color: aliceblue;
+  width: 20%;
+  box-shadow: 10px 10px 15px #1A0210;
+}
+.yes {
+ background-color: red;
+ margin-right: 20%;
+}
