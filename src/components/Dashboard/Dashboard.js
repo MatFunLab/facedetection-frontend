@@ -10,7 +10,8 @@ class Dashboard extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
-        visible: "visible"
+        visible: "visible",
+        route: ""
       }
     }
 
@@ -18,7 +19,10 @@ onConfirm = () => {
   this.setState({visible: "not"});
 
 }
-// onClick={() => this.props.deleteUser()}
+onBack = (route) => {
+  this.setState({route: route});
+  this.props.onRouteChange(route);
+}
 
   render() {
     return(
@@ -26,7 +30,7 @@ onConfirm = () => {
       <div>
         { (this.state.visible === "visible") ?
           (<div>
-              <div className="ml6"><h2>{this.props.name}'s</h2>
+              <div className="ml6"><h1>{this.props.name}'s</h1>
                                   <h1> dashboard</h1>
               </div>
               <nav className="nav-dashboard">
@@ -46,7 +50,7 @@ onConfirm = () => {
           <div>
             <div className="buttons">
               <button className="yes" onClick={() => this.props.deleteUser()} >yes</button>
-              <button className="no">no</button>
+              <button className="no" >no</button>  // go to dashboard route
             </div>
           </div>
         </div>)
