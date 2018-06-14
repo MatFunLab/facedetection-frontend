@@ -50,7 +50,7 @@ onBack = (route) => {
           <div>
             <div className="buttons">
               <button className="yes" onClick={() => this.props.deleteUser()} >yes</button>
-              <button className="no" >no</button>  // go to dashboard route
+              <button className="no" >no</button>
             </div>
           </div>
         </div>)
