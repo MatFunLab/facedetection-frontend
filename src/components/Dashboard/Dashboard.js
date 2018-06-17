@@ -10,18 +10,14 @@ class Dashboard extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
-        visible: "visible",
-        route: ""
+        visible: "visible"
+
       }
     }
 
 onConfirm = () => {
   this.setState({visible: "not"});
 
-}
-onBack = (route) => {
-  this.setState({route: route});
-  this.props.onRouteChange(route);
 }
 
   render() {
@@ -49,8 +45,8 @@ onBack = (route) => {
           </div>
           <div>
             <div className="buttons">
-              <button className="yes" onClick={() => this.props.deleteUser()} >yes</button>
-              <button className="no" >no</button>
+              <button className="yes" onClick={() => this.props.deleteUser()} >YES</button>
+              <button className="no" onClick={() => this.props.onRouteChange("signin")} >NO</button>
             </div>
           </div>
         </div>)
@@ -60,21 +56,5 @@ onBack = (route) => {
     );
   }
 }
-// const Dashboard = ({loadUser, name, deleteUser}) => {
-//
-//     return (
-//       <div>
-//         <div className="ml6"><h2>{name}'s</h2>
-//                             <h1> dashboard</h1>
-//         </div>
-//         <nav className="nav-dashboard">
-//           <p className="f3 link dim black fw6 pa3 pointer w-20">kebvbb</p>
-//           <p className="f3 link dim black fw6 pa3 pointer w-20">ervrr</p>
-//           <p className="f3 link dim black fw6 pa3 pointer w-20">fvfe</p>
-//           <p className="f3 link dim black fw6 pa3 pointer w-20" onClick={() => deleteUser()}>Delete account</p>
-//         </nav>
-//       </div>
-//   );
-// }
 
 export default Dashboard;

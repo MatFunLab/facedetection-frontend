@@ -158,7 +158,7 @@ onGoToDashboard = ()=> {
            ((this.state.route === "signin") ?
                      <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} /> : ((this.state.route === "register") ?
                         <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}  /> :
-                           <Dashboard loadUser={this.loadUser} name={this.state.user.name} deleteUser={this.deleteUser} />))
+                           <Dashboard loadUser={this.loadUser} name={this.state.user.name} deleteUser={this.deleteUser} onRouteChange={this.onRouteChange}/>))
 
         }
       </div>
