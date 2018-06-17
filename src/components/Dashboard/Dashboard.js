@@ -44,7 +44,7 @@ onConfirm = () => {
             </div>
           </div>
           <div>
-            <div className="buttons">
+            <div className="buttons alert-container center">
               <button className="yes" onClick={() => this.props.deleteUser()} >YES</button>
               <button className="no" onClick={() => this.props.onRouteChange("signin")} >NO</button>
             </div>

@@ -25,9 +25,10 @@
 }
 .buttons {
   margin-top: 2%;
-  overflow:auto;
+  overflow: auto;
   display: flex;
   justify-content: center;
+  padding: 5px;
 
 }
 button {
