@@ -151,7 +151,6 @@ onGoToDashboard = ()=> {
            (this.state.route === "home") ?
                <div>
                  <Navigation onRouteChange={this.onRouteChange} name={this.state.user.name} onGoToDashboard={this.onGoToDashboard} />
-                 <Logo />
                  <Rank name={this.state.user.name} entries={this.state.user.entries}/>
                  <ImageLinkForm onInputChange={this.onInputChange} onSubmit={this.onSubmit} />
                  <FaceDetection box={this.state.box} imageUrl={this.state.imageUrl} />

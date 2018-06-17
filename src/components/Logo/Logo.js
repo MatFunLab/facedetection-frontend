@@ -1,3 +1,5 @@
+// example of puting logo on page
+
 import React from "react";
 import "./Logo.css"
 
