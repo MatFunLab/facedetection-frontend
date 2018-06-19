@@ -66,14 +66,14 @@ class Signin extends React.Component {
                     </div>
               </fieldset>
                   <div className="center">
-                    <input className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
+                    <input className="b ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib"
                       type="submit"
                       value="Sign in"
                       onClick={this.onSubmitSignIn}
                     />
                   </div>
                   <div className="lh-copy mt3">
-                    <p className="f4 fw5 link dim black db tc pointer"
+                    <p className="f4 fw5 link dim white db tc pointer"
                       onClick={() => this.props.onRouteChange("register")}>Register</p>
                   </div>
         </div>

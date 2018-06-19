@@ -15,4 +15,9 @@
 
 article {
   background-color: #404b;
+  color: white;
+}
+
+input {
+  color: white;
 }
