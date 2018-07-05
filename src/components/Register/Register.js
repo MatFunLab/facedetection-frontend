@@ -16,6 +16,9 @@ class Register extends React.Component {
   }
   onPasswordChange = (event) => {
     this.setState({password: event.target.value});
+    if(this.state.password <8) {
+      alert("password must be at least 8 characters long");
+    }
   }
   onNameChange = (event) => {
     this.setState({name: event.target.value});
@@ -82,7 +85,7 @@ class Register extends React.Component {
                     </div>
               </fieldset>
                   <div className="center mb4">
-                    <input className="b pa2 ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
+                    <input className="b pa2 ph3 pv2 input-reset ba bg-transparent grow pointer f6 dib"
                       type="submit"
                       value="register"
                       onClick={this.onSubmitRegister}
