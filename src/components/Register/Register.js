@@ -16,9 +16,6 @@ class Register extends React.Component {
   }
   onPasswordChange = (event) => {
     this.setState({password: event.target.value});
-    if(this.state.password <8) {
-      alert("password must be at least 8 characters long");
-    }
   }
   onNameChange = (event) => {
     this.setState({name: event.target.value});
